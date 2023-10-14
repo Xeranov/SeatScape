@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Produk</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <style>
+ 
+.shop-product-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 8rem;
+    padding-top: 60px;
+}
+
+ /* Hover effect untuk gambar produk */
+ .product-img-layer:hover .img {
+        transform: scale(1.1);
+    }
+
+    /* Tambahkan deskripsi singkat dan harga */
+    .product-description {
+        font-size: 0.9rem;
+        color: grey;
+    
+    }
+
+    .product-price {
+        color: #e74c3c;
+        font-size: 1.2rem;
+        margin-top: 5px;
+    }
+
+    /* Tombol Aksi */
+    .product-action-btn {
+        display: block;
+        margin: 10px auto;
+        padding: 8px 16px;
+        background-color: #e74c3c;
+        color: #fff;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .product-action-btn:hover {
+        background-color: #c0392b;
+    }
+
+    /* Efek Transisi saat hover */
+    .product:hover {
+        background-color: #fafafa;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+
+    /* Responsive Design */
+    @media (max-width: 900px) {
+      .shop-product-title {
+        margin-top: 100px; /* Anda bisa menyesuaikan nilai ini berdasarkan tinggi navbar Anda */
+    }
+      
+        .product {
+            flex-basis: calc(50% - 2rem); /* 2 produk per baris pada layar kecil */
+            box-sizing: border-box; /* memastikan padding dan border dimasukkan ke dalam total lebar elemen */
+        }
+        
+    }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <h1>SeatScape</h1>
+        </div>
+  
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="index.html#testimonial">Testimonial</a></li>
+          <li><a href="products.html">Shop</a></li>
+          <li><a href="contact us.html">Contact us</a></li>
+      </ul>
+      
+  
+        <button class="btn-fill">Register</button>
+      </nav>
+
+      
+  
+    <h2 class="shop-product-title">Shop Product</h2>
+
+    <div class="products">
+        <div class="product">
+            <div class="product-img-layer">
+              <div class="img img-one"></div>
+            </div>
+            <div class="product-content">
+              <h1 class="product-name">Classic Chair</h1>
+              <p class="product-quality">Outdoor Chair</p>
+              <p class="product-description">Crafted from teak wood with a premium finish.</p>
+              <p class="product-price">$249.99</p>
+              <button class="product-action-btn">Order Now</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-layer">
+              <div class="img img-two"></div>
+            </div>
+            <div class="product-content">
+              <h1 class="product-name">Neo Dacey</h1>
+              <p class="product-quality">Premium Cafe Chair</p>
+              <p class="product-description">Exquisitely constructed from robust oak wood.</p>
+              <p class="product-price">$179.99</p>
+              <button class="product-action-btn">Order Now</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-layer">
+              <div class="img img-three"></div>
+            </div>
+            <div class="product-content">
+              <h1 class="product-name">Workshop Chair</h1>
+              <p class="product-quality">Indoor Chair</p>
+              <p class="product-description">Bahan dari kayu mahoni dengan finishing terbaik.</p>
+              <p class="product-price">$149.99</p>
+              <button class="product-action-btn">Buy Now</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-layer">
+              <div class="img img-four"></div>
+            </div>
+            <div class="product-content">
+              <h1 class="product-name">Dining Chair</h1>
+              <p class="product-quality">Indoor Chair</p>
+              <p class="product-description">Elegant cherry wood with a sleek design.</p>
+              <p class="product-price">$219.99</p>
+              <button class="product-action-btn">Order Now</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-layer">
+              <div class="img img-five"></div>
+            </div>
+            <div class="product-content">
+              <h1 class="product-name">Dining Chair</h1>
+              <p class="product-quality">Indoor Chair</p>
+              <p class="product-description">Elegant cherry wood with a sleek design.</p>
+              <p class="product-price">$214.99</p>
+              <button class="product-action-btn">Order Now</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-layer">
+              <div class="img img-six"></div>
+            </div>
+            <div class="product-content">
+              <h1 class="product-name">Arm Chair</h1>
+              <p class="product-quality">Indoor Chair</p>
+              <p class="product-description">Refined chair crafted from premium cherry wood <br>
+                boasting a contemporary design.</p>
+              <p class="product-price">$215.99</p>
+              <button class="product-action-btn">Order Now</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-layer">
+              <div class="img img-seven"></div>
+            </div>
+            <div class="product-content">
+              <h1 class="product-name">Wood Chair</h1>
+              <p class="product-quality">Indoor Chair</p>
+              <p class="product-description">Mahogany wood is renowned <br>for its beauty and workability.</p>
+              <p class="product-price">$119.99</p>
+              <button class="product-action-btn">Order Now</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-layer">
+              <div class="img img-eight"></div>
+            </div>
+            <div class="product-content">
+              <h1 class="product-name">Dining Chair</h1>
+              <p class="product-quality">Indoor Chair</p>
+              <p class="product-description">Elegant cherry wood with a sleek design.</p>
+              <p class="product-price">$169.99</p>
+              <button class="product-action-btn">Order Now</button>
+            </div>
+          </div>
+        </div> 
+    </div>
+    <button id="scrollToTopButton" onclick="scrollToTop()" title="Go to top">&#8679;</button>
+    <footer>
+      <div class="logo-container">
+        <h1>SeatScape</h1>
+        <p>
+          Crafting a legacy of comfort and style, one chair at a time. Dive into the world of impeccable craftsmanship and design.
+        </p>
+      </div>
+
+      <div class="about-company">
+        <div class="container">
+          <h1>About</h1>
+          <p>News & Blog</p>
+          <p>Features</p>
+          <p>About Us</p>
+        </div>
+        <div class="container">
+          <h1>Company</h1>
+          <p>How We Work?</p>
+          <p>Testimonial</p>
+          <p>Security</p>
+        </div>
+      
+        <div class="container">
+          <h1>Follow us</h1>
+        <div class="social-media">
+          <a href="https://facebook.com/yourcompany" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/yourcompany" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com/hanifxy_" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </footer>
+</body>
+</html>
