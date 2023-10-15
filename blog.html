@@ -5,112 +5,196 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chairs</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <style>
-      .card {
-        width: 400px; /* Lebar kartu */
-        height: 400px;
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+      #load-more-button {
+        width: auto;
+        display: inline-block;
       }
-    
-      
-    </style>
-    
-    
+    </style> -->
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-white rounded" aria-label="Thirteenth navbar example">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
-          <a class="navbar-brand col-lg-3 me-0" href="#">Logo</a>
-          <ul class="navbar-nav col-lg-6 justify-content-lg-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Product</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Articles</a>
-            </li>
-          </ul>
-          <div class="d-lg-flex col-lg-3 justify-content-lg-end ">
-            <button class="btn btn-warning ">Buy Now</button>
-          </div>
-        </div>
+    <nav>
+      <div class="logo">
+        <h1>SeatScape</h1>
       </div>
+      <ul>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="#testimonial">Testimonial</a></li>
+        <li><a href="products.html">Shop</a></li>
+        <li><a href="contact us.html">Contact us</a></li>
+        <li><a href="blog.html">Article</a></li>
+      </ul>
+      <button class="btn-fill">Register</button>
     </nav>
     
 
 <!-- Blog -->
-    <body class="bg-white">
-      <div class="container">
-        <div class="text-center my-5">
-          <h1>BLOGS</h1>
-          <hr />
-          <H6>Browse Our Blogs And Get Inspired.</H6>
-        </div>
-        <div class="row">
-
-        <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card text-bg-secondary mb-3 "style="width: 20rem; height: 30rem;">
+<br>
+<br>
+<br>
+<body class="bg-white">
+  <div class="container-fluid">
+    <div class="text-center my-5">
+      <h1>BLOGS</h1>
+      <hr />
+      <h6>Browse Our Blogs And Get Inspired.</h6>
+    </div>
+    <div class="row d-flex justify-content-center" id="card-row">
+      <!-- card1 -->
+      <div class="col-lg-3 col-md-5 col-sm-12">
+        <div class="card text-bg-secondary mb-3 mx-auto" style="width: 20rem; height: 20rem;">
           <div class="card-img-overlay d-flex flex-column-reverse">
-            <a href="#" class="btn btn-outline-warning rounded-0 float-end"
-                >Read More</a>
+            <a href="#" class="btn btn-outline-warning rounded-0 float-end">Read More</a>
             <p class="card-text">Lorem ipsum dolor sit amet...</p>
             <h5 class="card-title">White Chair</h5>
           </div>
-          <img src="Images/bruno-emmanuelle--MUoHL1XULM-unsplash-removebg-preview.png" class="card-img" alt="...">
-        </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="card text-bg-secondary mb-3 "style="width: 20rem; height: 30rem;">
-            <div class="card-img-overlay d-flex flex-column-reverse">
-              <a href="#" class="btn btn-outline-warning rounded-0 float-end"
-                  >Read More</a>
-              <p class="card-text">Lorem ipsum dolor sit amet...</p>
-              <h5 class="card-title">Black Chair</h5>
-            </div>
-            <img src="Images/pexels-ron-lach-8346055-removebg-preview.png" class="card-img" alt="...">
-          </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card text-bg-secondary mb-3 "style="width: 20rem; height: 30rem;">
-              <div class="card-img-overlay d-flex flex-column-reverse">
-                <a href="#" class="btn btn-outline-warning rounded-0 float-end"
-                    >Read More</a>
-                <p class="card-text">Lorem ipsum dolor sit amet...</p>
-                <h5 class="card-title">Cat Chair</h5>
-              </div>
-              <img src="Images/scott-webb-eD853mTbBA0-unsplash-removebg-preview.png" class="card-img" alt="...">
-            </div>
-            </div>
-
+          <img src="Images/bruno-emmanuelle--MUoHL1XULM-unsplash-removebg-preview.png" class="card-img-top" alt="..." style="object-fit: cover; height: 100%;">
         </div>
       </div>
-    </body>
+      <!-- card2 -->
+      <div class="col-lg-3 col-md-5 col-sm-12">
+        <div class="card text-bg-secondary mb-3 mx-auto" style="width: 20rem; height: 20rem;">
+          <div class="card-img-overlay d-flex flex-column-reverse">
+            <a href="#" class="btn btn-outline-warning rounded-0 float-end">Read More</a>
+            <p class="card-text">Lorem ipsum dolor sit amet...</p>
+            <h5 class="card-title">Black Chair</h5>
+          </div>
+          <img src="Images/pexels-ron-lach-8346055-removebg-preview.png" class="card-img" alt="..." style="object-fit: cover; height: 100%;">
+        </div>
+      </div>
+      <!-- card3 -->
+      <div class="col-lg-3 col-md-5 col-sm-12">
+        <div class="card text-bg-secondary mb-3 mx-auto" style="width: 20rem; height: 20rem;">
+          <div class="card-img-overlay d-flex flex-column-reverse">
+            <a href="#" class="btn btn-outline-warning rounded-0 float-end">Read More</a>
+            <p class="card-text">Lorem ipsum dolor sit amet...</p>
+            <h5 class="card-title">Cat Chair</h5>
+          </div>
+          <img src="Images/scott-webb-eD853mTbBA0-unsplash-removebg-preview.png" class="card-img" alt="..." style="object-fit: cover; height: 100%;">
+        </div>
+      </div>
+      <!-- card4 -->
+      <div class="col-lg-3 col-md-5 col-sm-12">
+        <div class="card text-bg-secondary mb-3 mx-auto" style="width: 20rem; height: 20rem;">
+          <div class="card-img-overlay d-flex flex-column-reverse">
+            <a href="#" class="btn btn-outline-warning rounded-0 float-end">Read More</a>
+            <p class="card-text">Lorem ipsum dolor sit amet...</p>
+            <h5 class="card-title">Cat Chair</h5>
+          </div>
+          <img src="Images/suchit-poojari-ljRiZl00n18-unsplash-removebg-preview.png" class="card-img" alt="..." style="object-fit: cover; height: 100%;">
+        </div>
+      </div>
+
+      <!-- load more -->
+      <button type="button" class="btn btn-warning" id="load-more-button">Load More</button>
+    </div>
+
+    <!-- hidden card -->
+    <div class="row d-flex justify-content-center d-none" id="hidden-cards">
+      <!-- card5 -->
+      <div class="col-lg-3 col-md-5 col-sm-12">
+        <div class="card text-bg-secondary mb-3 mx-auto" style="width: 20rem; height: 20rem;">
+          <div class="card-img-overlay d-flex flex-column-reverse">
+            <a href="#" class="btn btn-outline-warning rounded-0 float-end">Read More</a>
+            <p class="card-text">Lorem ipsum dolor sit amet...</p>
+            <h5 class="card-title">Pink Chair</h5>
+          </div>
+          <img src="Images/eugenivy_now-1JJJIHh7-Mk-unsplash-removebg-preview.png" class="card-img" alt="..." style="object-fit: cover; height: 100%;">
+        </div>
+      </div>
+      <!-- card6 -->
+      <div class="col-lg-3 col-md-5 col-sm-12">
+        <div class="card text-bg-secondary mb-3 mx-auto" style="width: 20rem; height: 20rem;">
+          <div class="card-img-overlay d-flex flex-column-reverse">
+            <a href="#" class="btn btn-outline-warning rounded-0 float-end">Read More</a>
+            <p class="card-text">Lorem ipsum dolor sit amet...</p>
+            <h5 class="card-title">Suite Seat</h5>
+          </div>
+          <img src="Images/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash-removebg-preview.png" class="card-img" alt="..." style="object-fit: cover; height: 100%;">
+        </div>
+      </div>
+      <!-- card7 -->
+      <div class="col-lg-3 col-md-5 col-sm-12">
+        <div class="card text-bg-secondary mb-3 mx-auto" style="width: 20rem; height: 20rem;">
+          <div class="card-img-overlay d-flex flex-column-reverse">
+            <a href="#" class="btn btn-outline-warning rounded-0 float-end">Read More</a>
+            <p class="card-text">Lorem ipsum dolor sit amet...</p>
+            <h5 class="card-title">Mini Chair</h5>
+          </div>
+          <img src="Images/daniil-silantev-1P6AnKDw6S8-unsplash-removebg-preview.png" class="card-img" alt="..." style="object-fit: cover; height: 100%;">
+        </div>
+      </div>
+      <!-- card8 -->
+      <div class="col-lg-3 col-md-5 col-sm-12">
+        <div class="card text-bg-secondary mb-3 mx-auto" style="width: 20rem; height: 20rem;">
+          <div class="card-img-overlay d-flex flex-column-reverse">
+            <a href="#" class="btn btn-outline-warning rounded-0 float-end">Read More</a>
+            <p class="card-text">Lorem ipsum dolor sit amet...</p>
+            <h5 class="card-title">Relaxing Chair</h5>
+          </div>
+          <img src="Images/behnam-norouzi-phXwnWWz-BM-unsplash-removebg-preview.png" class="card-img" alt="..." style="object-fit: cover; height: 100%;">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+
 
 
     
     
     <!-- footer -->
-    <div class="container-fluid">
-      <footer class="py-3 my-4 bg-dark-subtle">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-        </ul>
-        <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
-      </footer>
-    </div>
+    <footer>
+      <div class="logo-container">
+        <h1>SeatScape</h1>
+        <p>
+          Crafting a legacy of comfort and style, one chair at a time. Dive into the world of impeccable craftsmanship and design.
+        </p>
+      </div>
+
+      <div class="about-company">
+        <div class="container">
+          <h1>About</h1>
+          <p>News & Blog</p>
+          <p>Features</p>
+          <p>About Us</p>
+        </div>
+        <div class="container">
+          <h1>Company</h1>
+          <p>How We Work?</p>
+          <p>Testimonial</p>
+          <p>Security</p>
+        </div>
+      
+        <div class="container">
+          <h1>Follow us</h1>
+        <div class="social-media">
+          <a href="https://facebook.com/yourcompany" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/yourcompany" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com/hanifxy_" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </footer>
   </body>
+  <script>
+    // Fungsi untuk menampilkan kartu berikutnya
+    function showNextCard() {
+      const hiddenCard = document.querySelector(".d-none");
+      if (hiddenCard) {
+        hiddenCard.classList.remove("d-none");
+        document.querySelector("#load-more-button").style.display = "none";
+      } else {
+        document.querySelector("#load-more-button").style.display = "none";
+      }
+    }
+  
+    // Tambahkan event listener untuk tombol "Load More"
+    document.querySelector("#load-more-button").addEventListener("click", showNextCard);
+  </script>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>
