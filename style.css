@@ -662,4 +662,8 @@ ul li a {
     text-align: center;
     margin-right: 0;
   }
+  .logo-container {
+    margin: 0 20px; /* Menambahkan margin sebesar 20 piksel ke kiri dan kanan */
+  }
+  
 }
