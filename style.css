@@ -581,8 +581,19 @@ ul li a {
 }
 
 @media only screen and (max-width: 600px) {
+  #why-us, #features {
+    text-align: center;
+    padding: 10px;
+  }
+
   .primary-headings {
     width: 350px;
+    font-size: 16px; 
+  }
+
+  .main-headings {
+    font-size: 3rem;
+    text-align: center;
   }
 
   .img-container {
@@ -592,11 +603,11 @@ ul li a {
   ul li {
     display: block;
     margin-bottom: 1rem;
-}
+  }
 
-ul li a {
-    margin-left: 0;
-}
+  ul li a {
+      margin-left: 0;
+  }
 
 
   .popularity div h1 {
@@ -610,20 +621,45 @@ ul li a {
     margin-top: 7rem;
   }
 
-  .main-headings {
-    font-size: 3rem;
-    text-align: center;
-  }
-
   .d-none {
     display: none;
   }
 
   .cards {
     margin-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card {
+    text-align: center;
+    padding: 10px;
   }
 
   .card-fill {
     margin-left: 10px;
+  }
+  .testimonial-img-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  #features .img-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  #pri {
+    width: 200px;
+    font-size: 16px; 
+    margin-right: 0;
+  }
+  #main {
+    width: 200px;
+    font-size: 2rem;
+    text-align: center;
+    margin-right: 0;
   }
 }
